@@ -1,4 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {  
+              // фиксированное меню
+              const nav = document.querySelector('.nav');
+              window.addEventListener('scroll', function() {
+                const scrolled = window.pageYOffset || document.documentElement.scrollTop;
+    
+                if (scrolled >= 160) {
+                    nav.classList.add('nav_fixed');
+                } else {
+                    nav.classList.remove('nav_fixed');
+                }
+              });
+
+
+
   if (document.querySelector('.h-slider') && document.querySelector('.trust_slider') && document.querySelector('.beforeafter_slider') ) {
 
 
@@ -26,7 +40,7 @@ document.querySelector('.next').addEventListener('click', () => {
       items: 6,
       "autoplayTimeout": 4000,
       slideBy: '1',
-      autoplay: true,
+      autoplay: false,
       controls:false,
       nav:false
     });
