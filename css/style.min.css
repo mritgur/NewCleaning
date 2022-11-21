@@ -506,6 +506,7 @@
   padding: 30px 0 80px 0;
 }
 .company_serv_subtitle {
+  margin-top: 50px;
   padding-left: 1px;
   font-size: 20px;
   line-height: 24px;
@@ -886,8 +887,9 @@
 }
 
 .footer {
-  height: 470px;
+  min-height: 450px;
   background-color: #333333;
+  padding-bottom: 30px;
 }
 .footer * {
   color: #fff;
@@ -895,7 +897,7 @@
 
 .line {
   display: grid;
-  grid-template-rows: 50px;
+  grid-template-rows: 25px;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -1836,6 +1838,13 @@
   .container {
     max-width: 100%;
   }
+  .header .header_menu_main {
+    width: 335px;
+  }
+  .header .header_menu_phone-icon {
+    display: inline-block;
+    padding-right: 10px;
+  }
   .header .mobile_menu_close {
     position: absolute;
     top: 75px;
@@ -1854,15 +1863,22 @@
     background-color: #fff;
     z-index: 7;
   }
-  .header .header_menu_social {
+  .header .header_menu_phone {
     margin-right: 5px;
-    width: 110px;
+  }
+  .header .header_menu_phone .header_menu_phone-icon {
+    padding-right: 10px;
+  }
+  .header .header_menu_phone .header_menu_tel {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
   }
   .header .header_menu_a img {
     height: 30px;
     width: 30px;
   }
-  .header .header_menu_location, .header .header_menu_phone, .header .header_menu_btn1 {
+  .header .header_menu_location, .header .header_menu_social, .header .header_menu_btn1, .header .header_menu_somain {
     display: none;
   }
   .header .mobile_menu {
@@ -1876,9 +1892,6 @@
     left: 10px;
     z-index: 6;
   }
-  .header .mobile_menu .header_menu_phone-icon {
-    display: inline-block;
-  }
   .header .mobile_menu .header_menu_tel {
     font-weight: 600;
     font-size: 16px;
@@ -1889,7 +1902,7 @@
     position: absolute;
     left: 10px;
     display: block;
-    height: 30px;
+    height: 40px;
     width: 178px;
     top: 98px;
     font-weight: 600;
@@ -1914,7 +1927,7 @@
   .header .mobile_nav {
     display: block;
     padding-left: 0;
-    padding-top: 84px;
+    padding-top: 99px;
     position: absolute;
     list-style-type: none;
     top: 55px;
@@ -2065,6 +2078,9 @@
   .sl_btn {
     display: none;
   }
+  .company_serv .company_serv_title {
+    margin-top: 0;
+  }
   .company_serv_slider {
     width: 360px;
   }
@@ -2212,7 +2228,6 @@
 @media (max-width: 576px) {
   .container {
     max-width: 100%;
-    padding: 0 10px;
   }
   .active_shares_title {
     font-weight: 700;
@@ -2225,6 +2240,13 @@
   .active_shares_unit {
     margin-top: 35px;
   }
+  .active_shares_img {
+    width: 150px;
+    height: 100px;
+  }
+  .active_shares_link {
+    width: 150px;
+  }
   .active_shares_btn {
     margin-top: 40px;
   }
@@ -2234,6 +2256,9 @@
   .questions {
     padding: 60px 0;
     background-color: #fff;
+  }
+  .questions .container {
+    padding: 0 10px;
   }
   .questions_title {
     width: 300px;
@@ -2261,7 +2286,6 @@
 @media (max-width: 576px) {
   .container {
     max-width: 100%;
-    padding: 0 10px;
   }
   .contacts_descr {
     margin-top: 15px;
@@ -2471,7 +2495,6 @@
 @media (max-width: 576px) {
   .container {
     max-width: 100%;
-    padding: 0 10px;
   }
   .pad_default {
     padding: 25px 0 60px 0;
